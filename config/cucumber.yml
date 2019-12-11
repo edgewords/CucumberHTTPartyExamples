@@ -1,0 +1,1 @@
+default: --format progress --format html --out=./results/TestResults.html
