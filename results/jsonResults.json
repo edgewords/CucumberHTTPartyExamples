@@ -1,0 +1,150 @@
+[
+  {
+    "uri": "features/API_Tests.feature",
+    "id": "api-tests",
+    "keyword": "Feature",
+    "name": "API Tests",
+    "description": "   API Tests using HTTParty, against http://dummy.restapiexample.com/",
+    "line": 1,
+    "elements": [
+      {
+        "id": "api-tests;simple-get-test",
+        "keyword": "Scenario",
+        "name": "Simple GET Test",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I GET customer record number 1",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 810891700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 response code",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11045600
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-tests;create-a-customer",
+        "keyword": "Scenario",
+        "name": "Create a Customer",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I POST a new customer",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1053585700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 response code",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I can GET the customer details",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748903100
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-tests;update-a-customer",
+        "keyword": "Scenario",
+        "name": "Update a customer",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I POST a new customer",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718563700
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I update the customer details",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 821956000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 response code",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "The customer is updated",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/API_Tests_Steps.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 807072400
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

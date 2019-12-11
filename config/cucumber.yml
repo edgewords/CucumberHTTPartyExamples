@@ -1,1 +1,1 @@
-default: --format progress --format html --out=./results/TestResults.html
+default: --format progress --expand --format json --out=./results/jsonResults.json --format html --out=./results/TestResults.html
