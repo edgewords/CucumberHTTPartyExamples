@@ -9,10 +9,10 @@ Scenario: Simple GET Product Test
 Scenario Outline: Create a new Product
    When I POST a new product with "<id>", "<name>", "<price>"
    Then I get a 201 response code
-   Examples:
-      | id  | name      | price  |
-      | 8   | pendrive  | 30     |
-      | 9   | usb cable | 10     |
+      Examples:
+         | id  | name      | price  |
+         | 8   | pendrive  | 30     |
+         | 9   | usb cable | 10     |
 
 Scenario: Delete a Product
    When I Delete product 2
@@ -21,3 +21,4 @@ Scenario: Delete a Product
 Scenario: Update a Product
    When I Update product 1 with a name of "USB Headset" and a price of "50"
    Then I get a 200 response code
+   And Product 1 is now a "USB Headset"

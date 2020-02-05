@@ -34,43 +34,39 @@
 </div>
 </header>
 <div id="g0f0s0" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Simple GET Product Test (0.277s)</h5>
+<div class="modal-content"><h5>Simple GET Product Test (0.340s)</h5>
 features/API_Products.feature:4<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I GET product record number 1 (0.277s)<pre>{
+<b>When </b> I GET product record number 1 (0.337s)<pre>{
 "id": 1,
 "name": "iPad",
 "price": 500
 }</pre></li>
-<li class="collection-item step failed">
-<b>Then </b> I get a 200 response code (0.000s)<pre>Ambiguous match of &quot;I get a 200 response code&quot;:features/step_definitions/API_Products_Steps.rb:6:in `&quot;I get a {int} response code&quot;&#39;
-features/step_definitions/API_Tests_Steps.rb:12:in `&quot;I get a 200 response code&quot;&#39;You can run again with --guess to make Cucumber be more smart about it
- (Cucumber::Ambiguous)
-features/API_Products.feature:6:in `Then I get a 200 response code&#39;</pre>
-</li>
-<li class="collection-item step skipped">
+<li class="collection-item step passed">
+<b>Then </b> I get a 200 response code (0.002s)</li>
+<li class="collection-item step passed">
 <b>And </b> The product is an &quot;iPad&quot; (0.000s)</li>
 </ul>
 </div><div class="modal-footer">
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s1" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Create a new Product (0.085s)</h5>
+<div class="modal-content"><h5>Create a new Product (0.095s)</h5>
 features/API_Products.feature:14<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I POST a new product with &quot;8&quot;, &quot;pendrive&quot;, &quot;30&quot; (0.082s)<pre>{
+<b>When </b> I POST a new product with &quot;8&quot;, &quot;pendrive&quot;, &quot;30&quot; (0.095s)<pre>{
 "id": 8,
 "name": "pendrive",
 "price": 30
 }</pre><pre>201</pre></li>
 <li class="collection-item step passed">
-<b>Then </b> I get a 201 response code (0.003s)</li>
+<b>Then </b> I get a 201 response code (0.000s)</li>
 </ul>
 </div><div class="modal-footer">
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s2" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Create a new Product (0.014s)</h5>
+<div class="modal-content"><h5>Create a new Product (0.016s)</h5>
 features/API_Products.feature:15<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I POST a new product with &quot;9&quot;, &quot;usb cable&quot;, &quot;10&quot; (0.014s)<pre>{
+<b>When </b> I POST a new product with &quot;9&quot;, &quot;usb cable&quot;, &quot;10&quot; (0.016s)<pre>{
 "id": 9,
 "name": "usb cable",
 "price": 10
@@ -82,82 +78,34 @@ features/API_Products.feature:15<ul class="collection stepList"><li class="colle
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s3" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Delete a Product (0.000s)</h5>
-features/API_Products.feature:17<ul class="collection stepList"><li class="collection-item step pending">
-<b>When </b> I Delete product 2 (0.000s)<pre>TODO (Cucumber::Pending)
-./features/step_definitions/API_Products_Steps.rb:32:in `&quot;I Delete product {int}&quot;&#39;
-features/API_Products.feature:18:in `When I Delete product 2&#39;</pre>
-</li>
-<li class="collection-item step skipped">
+<div class="modal-content"><h5>Delete a Product (0.012s)</h5>
+features/API_Products.feature:17<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I Delete product 2 (0.012s)</li>
+<li class="collection-item step passed">
 <b>Then </b> I get a 200 response code (0.000s)</li>
 </ul>
 </div><div class="modal-footer">
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s4" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Update a Product (0.000s)</h5>
-features/API_Products.feature:21<ul class="collection stepList"><li class="collection-item step pending">
-<b>When </b> I Update product 1 with a name of &quot;USB Headset&quot; and a price of &quot;50&quot; (0.000s)<pre>TODO (Cucumber::Pending)
-./features/step_definitions/API_Products_Steps.rb:36:in `&quot;I Update product {int} with a name of {string} and a price of {string}&quot;&#39;
-features/API_Products.feature:22:in `When I Update product 1 with a name of &quot;USB Headset&quot; and a price of &quot;50&quot;&#39;</pre>
-</li>
-<li class="collection-item step skipped">
-<b>Then </b> I get a 200 response code (0.000s)</li>
-</ul>
-</div><div class="modal-footer">
-<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
-</div>
-</div><div id="g0f1s0" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Simple GET Test (0.955s)</h5>
-features/API_Tests.feature:4<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I GET customer record number 1 (0.955s)</li>
-<li class="collection-item step failed">
-<b>Then </b> I get a 200 response code (0.000s)<pre>Ambiguous match of &quot;I get a 200 response code&quot;:features/step_definitions/API_Products_Steps.rb:6:in `&quot;I get a {int} response code&quot;&#39;
-features/step_definitions/API_Tests_Steps.rb:12:in `&quot;I get a 200 response code&quot;&#39;You can run again with --guess to make Cucumber be more smart about it
- (Cucumber::Ambiguous)
-features/API_Tests.feature:6:in `Then I get a 200 response code&#39;</pre>
-</li>
-</ul>
-</div><div class="modal-footer">
-<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
-</div>
-</div><div id="g0f1s1" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Create a Customer (0.756s)</h5>
-features/API_Tests.feature:8<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I POST a new customer (0.755s)<pre>{"status":"success","data":{"name":"tester_05022020134724","salary":"20000","age":"25","id":53}}</pre></li>
-<li class="collection-item step failed">
-<b>Then </b> I get a 200 response code (0.000s)<pre>Ambiguous match of &quot;I get a 200 response code&quot;:features/step_definitions/API_Products_Steps.rb:6:in `&quot;I get a {int} response code&quot;&#39;
-features/step_definitions/API_Tests_Steps.rb:12:in `&quot;I get a 200 response code&quot;&#39;You can run again with --guess to make Cucumber be more smart about it
- (Cucumber::Ambiguous)
-features/API_Tests.feature:10:in `Then I get a 200 response code&#39;</pre>
-</li>
-<li class="collection-item step skipped">
-<b>And </b> I can GET the customer details (0.000s)</li>
-</ul>
-</div><div class="modal-footer">
-<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
-</div>
-</div><div id="g0f1s2" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Update a customer (1.387s)</h5>
-features/API_Tests.feature:13<ul class="collection stepList"><li class="collection-item step passed">
-<b>Given </b> I POST a new customer (0.686s)<pre>{"status":"success","data":{"name":"tester_05022020134724","salary":"20000","age":"25","id":32}}</pre></li>
+<div class="modal-content"><h5>Update a Product (0.027s)</h5>
+features/API_Products.feature:21<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I Update product 1 with a name of &quot;USB Headset&quot; and a price of &quot;50&quot; (0.015s)<pre>{
+"id": 0,
+"name": "USB Headset",
+"price": 50
+}</pre><pre>200</pre></li>
 <li class="collection-item step passed">
-<b>When </b> I update the customer details (0.701s)</li>
-<li class="collection-item step failed">
-<b>Then </b> I get a 200 response code (0.000s)<pre>Ambiguous match of &quot;I get a 200 response code&quot;:features/step_definitions/API_Products_Steps.rb:6:in `&quot;I get a {int} response code&quot;&#39;
-features/step_definitions/API_Tests_Steps.rb:12:in `&quot;I get a 200 response code&quot;&#39;You can run again with --guess to make Cucumber be more smart about it
- (Cucumber::Ambiguous)
-features/API_Tests.feature:16:in `Then I get a 200 response code&#39;</pre>
-</li>
-<li class="collection-item step skipped">
-<b>And </b> The customer is updated (0.000s)</li>
+<b>Then </b> I get a 200 response code (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> Product 1 is now a &quot;USB Headset&quot; (0.011s)</li>
 </ul>
 </div><div class="modal-footer">
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f0s4').modal();$('#g0f0s5').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();$('#g0f1s2').modal();$('#g0f1s3').modal();});
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f0s4').modal();$('#g0f0s5').modal();});
 </script>
 <main class="orange lighten-5">
 <div class="row"><div id="overview" class="col s12 orange lighten-5">
@@ -175,7 +123,7 @@ $(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f
 </div><div class="col m4 s12">
 <table id="metaData" class="bordered">
 <tbody>
-<tr><th>Total Time</th><td>3.474s</td></tr><tr>
+<tr><th>Total Time</th><td>0.489s</td></tr><tr>
 <th>Project name</th>
 <td>API Test</td>
 </tr><tr>
@@ -183,55 +131,36 @@ $(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f
 <td>http://dummy.restapiexample.com</td>
 </tr><tr>
 <th>Report generated</th>
-<td>2020-02-05 13:47:26 UTC</td>
+<td>2020-02-05 13:58:48 UTC</td>
 </tr></tbody>
 </table>
 </div>
 </div></div><div id="features" class="col s12 orange lighten-5 white-text">
 <ul class="featureList collapsible popout" data-collapsible="expandable">
-<li class="feature broken">
+<li class="feature working">
 <div class="collapsible-header orange lighten-1 waves-effect waves-light">
 <i class="material-icons">featured_play_list</i>
-<b>Feature</b>&nbsp;API Product Tests&nbsp;(0.376s)
+<b>Feature</b>&nbsp;API Product Tests&nbsp;(0.489s)
 </div><div class="collapsible-body orange lighten-4">
-<ul class="collection scenarioList"><li class="collection-item scenario failed">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
-<b>Scenario</b> Simple GET Product Test&nbsp;(0.277s)
+<b>Scenario</b> Simple GET Product Test&nbsp;(0.340s)
 </a>
 </li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
-<b>Scenario Outline</b> Create a new Product&nbsp;(0.085s)
+<b>Scenario Outline</b> Create a new Product&nbsp;(0.095s)
 </a>
 </li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s2">
-<b>Scenario Outline</b> Create a new Product&nbsp;(0.014s)
+<b>Scenario Outline</b> Create a new Product&nbsp;(0.016s)
 </a>
-</li><li class="collection-item scenario pending">
+</li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s3">
-<b>Scenario</b> Delete a Product&nbsp;(0.000s)
+<b>Scenario</b> Delete a Product&nbsp;(0.012s)
 </a>
-</li><li class="collection-item scenario pending">
+</li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s4">
-<b>Scenario</b> Update a Product&nbsp;(0.000s)
-</a>
-</li></ul>
-</div>
-</li><li class="feature broken">
-<div class="collapsible-header orange lighten-1 waves-effect waves-light">
-<i class="material-icons">featured_play_list</i>
-<b>Feature</b>&nbsp;API Tests&nbsp;(3.098s)
-</div><div class="collapsible-body orange lighten-4">
-<ul class="collection scenarioList"><li class="collection-item scenario failed">
-<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
-<b>Scenario</b> Simple GET Test&nbsp;(0.955s)
-</a>
-</li><li class="collection-item scenario failed">
-<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s1">
-<b>Scenario</b> Create a Customer&nbsp;(0.756s)
-</a>
-</li><li class="collection-item scenario failed">
-<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s2">
-<b>Scenario</b> Update a customer&nbsp;(1.387s)
+<b>Scenario</b> Update a Product&nbsp;(0.027s)
 </a>
 </li></ul>
 </div>
@@ -247,14 +176,14 @@ $(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f
 <th class="hide-on-small-only">Error</th>
 </tr>
 </thead>
-<tbody><tr class="failed">
+<tbody><tr class="passed">
 <td class="hide-on-small-only">
 API Product Tests
 </td><td class="hoverable">
 <a class="modal-trigger white-text" href="#g0f0s0">Simple GET Product Test</a>
 </td><td class="hide"></td><td class="uppercase">
-failed
-</td><td class="hide-on-small-only">Ambiguous match of &quot;I get a 200 response code&quot;:</td></tr>
+passed
+</td><td class="hide-on-small-only"></td></tr>
 <tr class="passed">
 <td class="hide-on-small-only">
 API Product Tests
@@ -271,79 +200,25 @@ API Product Tests
 </td><td class="hide"></td><td class="uppercase">
 passed
 </td><td class="hide-on-small-only"></td></tr>
-<tr class="pending">
+<tr class="passed">
 <td class="hide-on-small-only">
 API Product Tests
 </td><td class="hoverable">
 <a class="modal-trigger white-text" href="#g0f0s3">Delete a Product</a>
 </td><td class="hide"></td><td class="uppercase">
-pending
-</td><td class="hide-on-small-only">TODO (Cucumber::Pending)</td></tr>
-<tr class="pending">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
 <td class="hide-on-small-only">
 API Product Tests
 </td><td class="hoverable">
 <a class="modal-trigger white-text" href="#g0f0s4">Update a Product</a>
 </td><td class="hide"></td><td class="uppercase">
-pending
-</td><td class="hide-on-small-only">TODO (Cucumber::Pending)</td></tr>
-<tr class="failed">
-<td class="hide-on-small-only">
-API Tests
-</td><td class="hoverable">
-<a class="modal-trigger white-text" href="#g0f1s0">Simple GET Test</a>
-</td><td class="hide"></td><td class="uppercase">
-failed
-</td><td class="hide-on-small-only">Ambiguous match of &quot;I get a 200 response code&quot;:</td></tr>
-<tr class="failed">
-<td class="hide-on-small-only">
-API Tests
-</td><td class="hoverable">
-<a class="modal-trigger white-text" href="#g0f1s1">Create a Customer</a>
-</td><td class="hide"></td><td class="uppercase">
-failed
-</td><td class="hide-on-small-only">Ambiguous match of &quot;I get a 200 response code&quot;:</td></tr>
-<tr class="failed">
-<td class="hide-on-small-only">
-API Tests
-</td><td class="hoverable">
-<a class="modal-trigger white-text" href="#g0f1s2">Update a customer</a>
-</td><td class="hide"></td><td class="uppercase">
-failed
-</td><td class="hide-on-small-only">Ambiguous match of &quot;I get a 200 response code&quot;:</td></tr>
+passed
+</td><td class="hide-on-small-only"></td></tr>
 </tbody>
 </table></div><div id="errors" class="col s12 orange lighten-5">
-<ul class="errorList collapsible popout" data-collapsible="expandable"><li class="error">
-<div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
-<i class="material-icons">bug_report</i>Ambiguous match of &quot;I get a 200 response code&quot;:
-</div><div class="collapsible-body orange lighten-4">
-<ul class="collection failedScenarioList">
-<li class="collection-item failedScenario orange lighten-5 red-text">
-<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f0s0">Simple GET Product Test</a>
-</li><li class="collection-item failedScenario orange lighten-5 red-text">
-<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f1s0">Simple GET Test</a>
-</li><li class="collection-item failedScenario orange lighten-5 red-text">
-<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f1s1">Create a Customer</a>
-</li><li class="collection-item failedScenario orange lighten-5 red-text">
-<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f1s2">Update a customer</a>
-</li>
-</ul>
-</div>
-</li>
-<li class="error">
-<div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
-<i class="material-icons">bug_report</i>TODO (Cucumber::Pending)
-</div><div class="collapsible-body orange lighten-4">
-<ul class="collection failedScenarioList">
-<li class="collection-item failedScenario orange lighten-5 red-text">
-<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f0s3">Delete a Product</a>
-</li><li class="collection-item failedScenario orange lighten-5 red-text">
-<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f0s4">Update a Product</a>
-</li>
-</ul>
-</div>
-</li>
-</ul></div>
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
 </div>
 </main><footer class="page-footer orange lighten-4">
 <div class="footer-copyright orange lighten-1">

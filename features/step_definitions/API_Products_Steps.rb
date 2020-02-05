@@ -29,9 +29,20 @@ Then("The product is an {string}") do |productName|
   end
 
   When("I Delete product {int}") do |intID|
-    pending # Write code here that turns the phrase above into concrete actions
+    @response = HTTParty.delete('http://127.0.0.1:2002/api/products/'+ intID.to_s)
   end
   
   When("I Update product {int} with a name of {string} and a price of {string}") do |intID, strName, strPrice|
-    pending # Write code here that turns the phrase above into concrete actions
+    @response = HTTParty.put('http://127.0.0.1:2002/api/products/' + intID.to_s, 
+      :body => { :name => strName, 
+                 :price => strPrice,  
+               }.to_json,
+      :headers => { 'Content-Type' => 'application/json' } )
+  puts @response.body
+  puts @response.code
+  end
+
+  Then("Product {int} is now a {string}") do |intID, strName|
+    @response = HTTParty.get('http://127.0.0.1:2002/api/products/'+ intID.to_s)
+    expect(@response['name']).to eq(strName)
   end

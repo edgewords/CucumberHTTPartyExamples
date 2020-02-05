@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 276772300
+              "duration": 337297300
             }
           },
           {
@@ -35,12 +35,11 @@
             "name": "I get a 200 response code",
             "line": 6,
             "match": {
-              "location": "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/step_definitions/API_Products_Steps.rb:6"
             },
             "result": {
-              "status": "failed",
-              "error_message": "Ambiguous match of \"I get a 200 response code\":\n\nfeatures/step_definitions/API_Products_Steps.rb:6:in `\"I get a {int} response code\"'\nfeatures/step_definitions/API_Tests_Steps.rb:12:in `\"I get a 200 response code\"'\n\nYou can run again with --guess to make Cucumber be more smart about it\n (Cucumber::Ambiguous)\nfeatures/API_Products.feature:6:in `Then I get a 200 response code'",
-              "duration": 35600
+              "status": "passed",
+              "duration": 2250300
             }
           },
           {
@@ -51,7 +50,8 @@
               "location": "features/step_definitions/API_Products_Steps.rb:15"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 169500
             }
           }
         ]
@@ -77,7 +77,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 82258400
+              "duration": 95148100
             }
           },
           {
@@ -89,7 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2697400
+              "duration": 60900
             }
           }
         ]
@@ -115,7 +115,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14195000
+              "duration": 15507300
             }
           },
           {
@@ -127,7 +127,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44000
+              "duration": 47300
             }
           }
         ]
@@ -148,9 +148,8 @@
               "location": "features/step_definitions/API_Products_Steps.rb:31"
             },
             "result": {
-              "status": "pending",
-              "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/API_Products_Steps.rb:32:in `\"I Delete product {int}\"'\nfeatures/API_Products.feature:18:in `When I Delete product 2'",
-              "duration": 113100
+              "status": "passed",
+              "duration": 11910300
             }
           },
           {
@@ -158,10 +157,11 @@
             "name": "I get a 200 response code",
             "line": 19,
             "match": {
-              "location": "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/step_definitions/API_Products_Steps.rb:6"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 47500
             }
           }
         ]
@@ -178,13 +178,16 @@
             "keyword": "When ",
             "name": "I Update product 1 with a name of \"USB Headset\" and a price of \"50\"",
             "line": 22,
+            "output": [
+              "{\r\n  \"id\": 0,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
+              "200"
+            ],
             "match": {
               "location": "features/step_definitions/API_Products_Steps.rb:35"
             },
             "result": {
-              "status": "pending",
-              "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/API_Products_Steps.rb:36:in `\"I Update product {int} with a name of {string} and a price of {string}\"'\nfeatures/API_Products.feature:22:in `When I Update product 1 with a name of \"USB Headset\" and a price of \"50\"'",
-              "duration": 185100
+              "status": "passed",
+              "duration": 15488700
             }
           },
           {
@@ -192,165 +195,23 @@
             "name": "I get a 200 response code",
             "line": 23,
             "match": {
-              "location": "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "uri": "features/API_Tests.feature",
-    "id": "api-tests",
-    "keyword": "Feature",
-    "name": "API Tests",
-    "description": "   API Tests using HTTParty, against http://dummy.restapiexample.com/",
-    "line": 1,
-    "elements": [
-      {
-        "id": "api-tests;simple-get-test",
-        "keyword": "Scenario",
-        "name": "Simple GET Test",
-        "description": "",
-        "line": 4,
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "When ",
-            "name": "I GET customer record number 1",
-            "line": 5,
-            "match": {
-              "location": "features/step_definitions/API_Tests_Steps.rb:8"
+              "location": "features/step_definitions/API_Products_Steps.rb:6"
             },
             "result": {
               "status": "passed",
-              "duration": 955415400
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I get a 200 response code",
-            "line": 6,
-            "match": {
-              "location": "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
-            },
-            "result": {
-              "status": "failed",
-              "error_message": "Ambiguous match of \"I get a 200 response code\":\n\nfeatures/step_definitions/API_Products_Steps.rb:6:in `\"I get a {int} response code\"'\nfeatures/step_definitions/API_Tests_Steps.rb:12:in `\"I get a 200 response code\"'\n\nYou can run again with --guess to make Cucumber be more smart about it\n (Cucumber::Ambiguous)\nfeatures/API_Tests.feature:6:in `Then I get a 200 response code'",
-              "duration": 59300
-            }
-          }
-        ]
-      },
-      {
-        "id": "api-tests;create-a-customer",
-        "keyword": "Scenario",
-        "name": "Create a Customer",
-        "description": "",
-        "line": 8,
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "When ",
-            "name": "I POST a new customer",
-            "line": 9,
-            "output": [
-              "{\"status\":\"success\",\"data\":{\"name\":\"tester_05022020134724\",\"salary\":\"20000\",\"age\":\"25\",\"id\":53}}"
-            ],
-            "match": {
-              "location": "features/step_definitions/API_Tests_Steps.rb:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 755424100
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I get a 200 response code",
-            "line": 10,
-            "match": {
-              "location": "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
-            },
-            "result": {
-              "status": "failed",
-              "error_message": "Ambiguous match of \"I get a 200 response code\":\n\nfeatures/step_definitions/API_Products_Steps.rb:6:in `\"I get a {int} response code\"'\nfeatures/step_definitions/API_Tests_Steps.rb:12:in `\"I get a 200 response code\"'\n\nYou can run again with --guess to make Cucumber be more smart about it\n (Cucumber::Ambiguous)\nfeatures/API_Tests.feature:10:in `Then I get a 200 response code'",
-              "duration": 140300
+              "duration": 61200
             }
           },
           {
             "keyword": "And ",
-            "name": "I can GET the customer details",
-            "line": 11,
+            "name": "Product 1 is now a \"USB Headset\"",
+            "line": 24,
             "match": {
-              "location": "features/step_definitions/API_Tests_Steps.rb:33"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "api-tests;update-a-customer",
-        "keyword": "Scenario",
-        "name": "Update a customer",
-        "description": "",
-        "line": 13,
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "name": "I POST a new customer",
-            "line": 14,
-            "output": [
-              "{\"status\":\"success\",\"data\":{\"name\":\"tester_05022020134724\",\"salary\":\"20000\",\"age\":\"25\",\"id\":32}}"
-            ],
-            "match": {
-              "location": "features/step_definitions/API_Tests_Steps.rb:16"
+              "location": "features/step_definitions/API_Products_Steps.rb:45"
             },
             "result": {
               "status": "passed",
-              "duration": 685638300
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I update the customer details",
-            "line": 15,
-            "match": {
-              "location": "features/step_definitions/API_Tests_Steps.rb:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 701248700
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I get a 200 response code",
-            "line": 16,
-            "match": {
-              "location": "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
-            },
-            "result": {
-              "status": "failed",
-              "error_message": "Ambiguous match of \"I get a 200 response code\":\n\nfeatures/step_definitions/API_Products_Steps.rb:6:in `\"I get a {int} response code\"'\nfeatures/step_definitions/API_Tests_Steps.rb:12:in `\"I get a 200 response code\"'\n\nYou can run again with --guess to make Cucumber be more smart about it\n (Cucumber::Ambiguous)\nfeatures/API_Tests.feature:16:in `Then I get a 200 response code'",
-              "duration": 84200
-            }
-          },
-          {
-            "keyword": "And ",
-            "name": "The customer is updated",
-            "line": 17,
-            "match": {
-              "location": "features/step_definitions/API_Tests_Steps.rb:51"
-            },
-            "result": {
-              "status": "skipped"
+              "duration": 11443000
             }
           }
         ]
