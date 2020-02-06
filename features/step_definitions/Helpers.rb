@@ -1,5 +1,8 @@
 class GetProduct
     include HTTParty
+    format :json
+    # If you need authentication:
+    # basic_auth 'username', 'password'
   
     base_uri "http://127.0.0.1:2002/api/products"
   

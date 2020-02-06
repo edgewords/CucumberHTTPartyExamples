@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20891600
+              "duration": 55584300
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2942000
+              "duration": 2911400
             }
           }
         ]
@@ -74,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15263000
+              "duration": 17638500
             }
           },
           {
@@ -86,7 +86,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62700
+              "duration": 44700
             }
           },
           {
@@ -98,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 204600
+              "duration": 87000
             }
           }
         ]
@@ -116,7 +116,7 @@
             "name": "I POST a new product with \"pendrive\", \"30\"",
             "line": 10,
             "output": [
-              "{\r\n  \"id\": 25,\r\n  \"name\": \"pendrive\",\r\n  \"price\": 30\r\n}",
+              "{\r\n  \"id\": 4,\r\n  \"name\": \"pendrive\",\r\n  \"price\": 30\r\n}",
               "201"
             ],
             "match": {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21366600
+              "duration": 73521600
             }
           },
           {
@@ -136,7 +136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44200
+              "duration": 43500
             }
           }
         ]
@@ -154,7 +154,7 @@
             "name": "I POST a new product with \"usb cable\", \"10\"",
             "line": 10,
             "output": [
-              "{\r\n  \"id\": 26,\r\n  \"name\": \"usb cable\",\r\n  \"price\": 10\r\n}",
+              "{\r\n  \"id\": 5,\r\n  \"name\": \"usb cable\",\r\n  \"price\": 10\r\n}",
               "201"
             ],
             "match": {
@@ -162,7 +162,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14414100
+              "duration": 14962100
             }
           },
           {
@@ -174,7 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44200
+              "duration": 43100
             }
           }
         ]
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11977800
+              "duration": 11799800
             }
           },
           {
@@ -204,7 +204,7 @@
             "name": "I Update that product with a name of \"USB Headset\" and a price of \"50\"",
             "line": 19,
             "output": [
-              "{\r\n  \"id\": 27,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
+              "{\r\n  \"id\": 6,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
               "200"
             ],
             "match": {
@@ -212,7 +212,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14618400
+              "duration": 18528700
             }
           },
           {
@@ -224,7 +224,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44300
+              "duration": 53500
             }
           },
           {
@@ -236,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11324900
+              "duration": 11828700
             }
           }
         ]
@@ -258,7 +258,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12609700
+              "duration": 12243100
             }
           },
           {
@@ -269,9 +269,8 @@
               "location": "features/step_definitions/API_Products_Steps.rb:6"
             },
             "result": {
-              "status": "failed",
-              "error_message": "\nexpected: 200\n     got: 400\n\n(compared using ==)\n (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/API_Products_Steps.rb:7:in `\"I get a {int} response code\"'\nfeatures/API_Products.feature:25:in `Then I get a 200 response code'",
-              "duration": 30940600
+              "status": "passed",
+              "duration": 45600
             }
           }
         ]
@@ -293,7 +292,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12313000
+              "duration": 11397400
             }
           },
           {
@@ -305,7 +304,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51500
+              "duration": 71100
             }
           }
         ]
