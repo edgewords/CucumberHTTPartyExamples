@@ -1,5 +1,52 @@
 [
   {
+    "uri": "features/API_Class.feature",
+    "id": "utilising-helper-class-example",
+    "keyword": "Feature",
+    "name": "Utilising Helper Class Example",
+    "description": "   Utilises Helpers.rb::GetProduct Class",
+    "line": 1,
+    "elements": [
+      {
+        "id": "utilising-helper-class-example;get-a-product-with-getproduct",
+        "keyword": "Scenario",
+        "name": "Get a Product with GetProduct",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I get product 1",
+            "line": 6,
+            "output": [
+              "{\r\n  \"id\": 1,\r\n  \"name\": \"iPad\",\r\n  \"price\": 500\r\n}"
+            ],
+            "match": {
+              "location": "features/step_definitions/API_Class_Steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20891600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 Ok response",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/API_Class_Steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2942000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
     "uri": "features/API_Products.feature",
     "id": "api-product-tests",
     "keyword": "Feature",
@@ -27,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 337297300
+              "duration": 15263000
             }
           },
           {
@@ -39,7 +86,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2250300
+              "duration": 62700
             }
           },
           {
@@ -51,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 169500
+              "duration": 204600
             }
           }
         ]
@@ -66,10 +113,10 @@
         "steps": [
           {
             "keyword": "When ",
-            "name": "I POST a new product with \"8\", \"pendrive\", \"30\"",
+            "name": "I POST a new product with \"pendrive\", \"30\"",
             "line": 10,
             "output": [
-              "{\r\n  \"id\": 8,\r\n  \"name\": \"pendrive\",\r\n  \"price\": 30\r\n}",
+              "{\r\n  \"id\": 25,\r\n  \"name\": \"pendrive\",\r\n  \"price\": 30\r\n}",
               "201"
             ],
             "match": {
@@ -77,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95148100
+              "duration": 21366600
             }
           },
           {
@@ -89,7 +136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60900
+              "duration": 44200
             }
           }
         ]
@@ -104,10 +151,10 @@
         "steps": [
           {
             "keyword": "When ",
-            "name": "I POST a new product with \"9\", \"usb cable\", \"10\"",
+            "name": "I POST a new product with \"usb cable\", \"10\"",
             "line": 10,
             "output": [
-              "{\r\n  \"id\": 9,\r\n  \"name\": \"usb cable\",\r\n  \"price\": 10\r\n}",
+              "{\r\n  \"id\": 26,\r\n  \"name\": \"usb cable\",\r\n  \"price\": 10\r\n}",
               "201"
             ],
             "match": {
@@ -115,7 +162,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15507300
+              "duration": 14414100
             }
           },
           {
@@ -127,41 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47300
-            }
-          }
-        ]
-      },
-      {
-        "id": "api-product-tests;delete-a-product",
-        "keyword": "Scenario",
-        "name": "Delete a Product",
-        "description": "",
-        "line": 17,
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "When ",
-            "name": "I Delete product 2",
-            "line": 18,
-            "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11910300
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I get a 200 response code",
-            "line": 19,
-            "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 47500
+              "duration": 44200
             }
           }
         ]
@@ -171,47 +184,128 @@
         "keyword": "Scenario",
         "name": "Update a Product",
         "description": "",
-        "line": 21,
+        "line": 17,
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Given ",
+            "name": "That I have just created a new product with name \"mouse\" and price of \"5\"",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11977800
+            }
+          },
+          {
             "keyword": "When ",
-            "name": "I Update product 1 with a name of \"USB Headset\" and a price of \"50\"",
-            "line": 22,
+            "name": "I Update that product with a name of \"USB Headset\" and a price of \"50\"",
+            "line": 19,
             "output": [
-              "{\r\n  \"id\": 0,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
+              "{\r\n  \"id\": 27,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
               "200"
             ],
-            "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15488700
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I get a 200 response code",
-            "line": 23,
-            "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 61200
-            }
-          },
-          {
-            "keyword": "And ",
-            "name": "Product 1 is now a \"USB Headset\"",
-            "line": 24,
             "match": {
               "location": "features/step_definitions/API_Products_Steps.rb:45"
             },
             "result": {
               "status": "passed",
-              "duration": 11443000
+              "duration": 14618400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 response code",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "that Product is now a \"USB Headset\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11324900
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-product-tests;delete-a-product",
+        "keyword": "Scenario",
+        "name": "Delete a Product",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I Delete product 3",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12609700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 response code",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:6"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "\nexpected: 200\n     got: 400\n\n(compared using ==)\n (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/API_Products_Steps.rb:7:in `\"I get a {int} response code\"'\nfeatures/API_Products.feature:25:in `Then I get a 200 response code'",
+              "duration": 30940600
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-product-tests;negative-test",
+        "keyword": "Scenario",
+        "name": "Negative Test",
+        "description": "",
+        "line": 27,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I GET a product that does not exist",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12313000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 404 response code",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51500
             }
           }
         ]

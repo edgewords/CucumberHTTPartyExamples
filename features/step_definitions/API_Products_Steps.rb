@@ -16,10 +16,9 @@ Then("The product is an {string}") do |productName|
     expect(@response['name']).to eq(productName)
   end
 
-  When("I POST a new product with {string}, {string}, {string}") do |strID, strName, strPrice|
+  When("I POST a new product with {string}, {string}") do |strName, strPrice|
     @response = HTTParty.post('http://127.0.0.1:2002/api/products/', 
-        :body => { :id => strID, 
-                   :name => strName, 
+        :body => { :name => strName, 
                    :price => strPrice,  
                  }.to_json,
         :headers => { 'Content-Type' => 'application/json' } )
@@ -32,8 +31,19 @@ Then("The product is an {string}") do |productName|
     @response = HTTParty.delete('http://127.0.0.1:2002/api/products/'+ intID.to_s)
   end
   
-  When("I Update product {int} with a name of {string} and a price of {string}") do |intID, strName, strPrice|
-    @response = HTTParty.put('http://127.0.0.1:2002/api/products/' + intID.to_s, 
+  Given ("That I have just created a new product with name {string} and price of {string}") do |strName, strPrice|
+    @response = HTTParty.post('http://127.0.0.1:2002/api/products/', 
+      :body => { :name => strName, 
+                 :price => strPrice,  
+               }.to_json,
+      :headers => { 'Content-Type' => 'application/json' } )
+      # Now capture the dynamically created ID for the new product
+      # So we can update it later
+      @updatedID = @response['id']
+  end
+
+  When("I Update that product with a name of {string} and a price of {string}") do |strName, strPrice|
+    @response = HTTParty.put('http://127.0.0.1:2002/api/products/' + @updatedID.to_s, 
       :body => { :name => strName, 
                  :price => strPrice,  
                }.to_json,
@@ -42,7 +52,11 @@ Then("The product is an {string}") do |productName|
   puts @response.code
   end
 
-  Then("Product {int} is now a {string}") do |intID, strName|
-    @response = HTTParty.get('http://127.0.0.1:2002/api/products/'+ intID.to_s)
+  Then("that Product is now a {string}") do |strName|
+    @response = HTTParty.get('http://127.0.0.1:2002/api/products/'+ @updatedID.to_s)
     expect(@response['name']).to eq(strName)
+  end
+
+  When("I GET a product that does not exist") do
+    @response = HTTParty.get('http://127.0.0.1:2002/api/products/999999')
   end

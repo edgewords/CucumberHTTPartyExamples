@@ -7,18 +7,23 @@ Scenario: Simple GET Product Test
    And The product is an "iPad"
 
 Scenario Outline: Create a new Product
-   When I POST a new product with "<id>", "<name>", "<price>"
+   When I POST a new product with "<name>", "<price>"
    Then I get a 201 response code
       Examples:
-         | id  | name      | price  |
-         | 8   | pendrive  | 30     |
-         | 9   | usb cable | 10     |
-
-Scenario: Delete a Product
-   When I Delete product 2
-   Then I get a 200 response code
+         | name      | price  |
+         | pendrive  | 30     |
+         | usb cable | 10     |
 
 Scenario: Update a Product
-   When I Update product 1 with a name of "USB Headset" and a price of "50"
+   Given That I have just created a new product with name "mouse" and price of "5"
+   When I Update that product with a name of "USB Headset" and a price of "50"
    Then I get a 200 response code
-   And Product 1 is now a "USB Headset"
+   And that Product is now a "USB Headset"
+
+Scenario: Delete a Product
+   When I Delete product 3
+   Then I get a 200 response code
+
+Scenario: Negative Test
+   When I GET a product that does not exist
+   Then I get a 404 response code
