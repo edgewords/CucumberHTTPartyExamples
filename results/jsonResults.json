@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55584300
+              "duration": 22721200
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2911400
+              "duration": 2113300
             }
           }
         ]
@@ -70,11 +70,11 @@
               "{\r\n  \"id\": 1,\r\n  \"name\": \"iPad\",\r\n  \"price\": 500\r\n}"
             ],
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:10"
+              "location": "features/step_definitions/API_Products_Steps.rb:12"
             },
             "result": {
               "status": "passed",
-              "duration": 17638500
+              "duration": 13852600
             }
           },
           {
@@ -82,11 +82,11 @@
             "name": "I get a 200 response code",
             "line": 6,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 44700
+              "duration": 45100
             }
           },
           {
@@ -94,11 +94,11 @@
             "name": "The product is an \"iPad\"",
             "line": 7,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:15"
+              "location": "features/step_definitions/API_Products_Steps.rb:17"
             },
             "result": {
               "status": "passed",
-              "duration": 87000
+              "duration": 115600
             }
           }
         ]
@@ -116,15 +116,15 @@
             "name": "I POST a new product with \"pendrive\", \"30\"",
             "line": 10,
             "output": [
-              "{\r\n  \"id\": 4,\r\n  \"name\": \"pendrive\",\r\n  \"price\": 30\r\n}",
+              "{\r\n  \"id\": 7,\r\n  \"name\": \"pendrive\",\r\n  \"price\": 30\r\n}",
               "201"
             ],
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:19"
+              "location": "features/step_definitions/API_Products_Steps.rb:21"
             },
             "result": {
               "status": "passed",
-              "duration": 73521600
+              "duration": 14455100
             }
           },
           {
@@ -132,11 +132,11 @@
             "name": "I get a 201 response code",
             "line": 11,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 43500
+              "duration": 43000
             }
           }
         ]
@@ -154,15 +154,15 @@
             "name": "I POST a new product with \"usb cable\", \"10\"",
             "line": 10,
             "output": [
-              "{\r\n  \"id\": 5,\r\n  \"name\": \"usb cable\",\r\n  \"price\": 10\r\n}",
+              "{\r\n  \"id\": 8,\r\n  \"name\": \"usb cable\",\r\n  \"price\": 10\r\n}",
               "201"
             ],
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:19"
+              "location": "features/step_definitions/API_Products_Steps.rb:21"
             },
             "result": {
               "status": "passed",
-              "duration": 14962100
+              "duration": 14484800
             }
           },
           {
@@ -170,11 +170,11 @@
             "name": "I get a 201 response code",
             "line": 11,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 43100
+              "duration": 43400
             }
           }
         ]
@@ -192,11 +192,11 @@
             "name": "That I have just created a new product with name \"mouse\" and price of \"5\"",
             "line": 18,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:34"
+              "location": "features/step_definitions/API_Products_Steps.rb:36"
             },
             "result": {
               "status": "passed",
-              "duration": 11799800
+              "duration": 11971900
             }
           },
           {
@@ -204,15 +204,15 @@
             "name": "I Update that product with a name of \"USB Headset\" and a price of \"50\"",
             "line": 19,
             "output": [
-              "{\r\n  \"id\": 6,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
+              "{\r\n  \"id\": 9,\r\n  \"name\": \"USB Headset\",\r\n  \"price\": 50\r\n}",
               "200"
             ],
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:45"
+              "location": "features/step_definitions/API_Products_Steps.rb:47"
             },
             "result": {
               "status": "passed",
-              "duration": 18528700
+              "duration": 15786200
             }
           },
           {
@@ -220,11 +220,11 @@
             "name": "I get a 200 response code",
             "line": 20,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 53500
+              "duration": 44400
             }
           },
           {
@@ -232,11 +232,11 @@
             "name": "that Product is now a \"USB Headset\"",
             "line": 21,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:55"
+              "location": "features/step_definitions/API_Products_Steps.rb:57"
             },
             "result": {
               "status": "passed",
-              "duration": 11828700
+              "duration": 11935700
             }
           }
         ]
@@ -254,11 +254,11 @@
             "name": "I Delete product 3",
             "line": 24,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:30"
+              "location": "features/step_definitions/API_Products_Steps.rb:32"
             },
             "result": {
               "status": "passed",
-              "duration": 12243100
+              "duration": 11664300
             }
           },
           {
@@ -266,11 +266,12 @@
             "name": "I get a 200 response code",
             "line": 25,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 45600
+              "status": "failed",
+              "error_message": "\nexpected: 200\n     got: 400\n\n(compared using ==)\n (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/API_Products_Steps.rb:9:in `\"I get a {int} response code\"'\nfeatures/API_Products.feature:25:in `Then I get a 200 response code'",
+              "duration": 27636600
             }
           }
         ]
@@ -288,11 +289,11 @@
             "name": "I GET a product that does not exist",
             "line": 28,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:60"
+              "location": "features/step_definitions/API_Products_Steps.rb:62"
             },
             "result": {
               "status": "passed",
-              "duration": 11397400
+              "duration": 12209400
             }
           },
           {
@@ -300,11 +301,107 @@
             "name": "I get a 404 response code",
             "line": 29,
             "match": {
-              "location": "features/step_definitions/API_Products_Steps.rb:6"
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 71100
+              "duration": 55400
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/API_Users.feature",
+    "id": "users",
+    "keyword": "Feature",
+    "name": "Users",
+    "description": "   This requires basic auth, username edge, password, edgewords, encrypted = Authorization: Basic ZWRnZTplZGdld29yZHM=",
+    "line": 1,
+    "elements": [
+      {
+        "id": "users;get-a-user",
+        "keyword": "Scenario",
+        "name": "GET a user",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I get user 1",
+            "line": 6,
+            "output": [
+              "{\r\n  \"userID\": 1,\r\n  \"userName\": \"Bob Jones\"\r\n}"
+            ],
+            "match": {
+              "location": "features/step_definitions/API_Users_Steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19779000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 200 response code",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "The username is an \"Bob Jones\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/API_Users_Steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114500
+            }
+          }
+        ]
+      },
+      {
+        "id": "users;negative-auth-test",
+        "keyword": "Scenario",
+        "name": "Negative Auth Test",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I GET a user without basic auth",
+            "line": 11,
+            "output": [
+              "401"
+            ],
+            "match": {
+              "location": "features/step_definitions/API_Users_Steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16716200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get a 401 response code",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/API_Products_Steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66700
             }
           }
         ]

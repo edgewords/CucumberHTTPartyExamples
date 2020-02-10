@@ -34,9 +34,9 @@
 </div>
 </header>
 <div id="g0f0s0" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Simple GET Product Test (0.018s)</h5>
+<div class="modal-content"><h5>Simple GET Product Test (0.014s)</h5>
 features/API_Products.feature:4<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I GET product record number 1 (0.018s)<pre>{
+<b>When </b> I GET product record number 1 (0.014s)<pre>{
 "id": 1,
 "name": "iPad",
 "price": 500
@@ -50,10 +50,10 @@ features/API_Products.feature:4<ul class="collection stepList"><li class="collec
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s1" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Create a new Product (0.074s)</h5>
+<div class="modal-content"><h5>Create a new Product (0.014s)</h5>
 features/API_Products.feature:14<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I POST a new product with &quot;pendrive&quot;, &quot;30&quot; (0.074s)<pre>{
-"id": 4,
+<b>When </b> I POST a new product with &quot;pendrive&quot;, &quot;30&quot; (0.014s)<pre>{
+"id": 7,
 "name": "pendrive",
 "price": 30
 }</pre><pre>201</pre></li>
@@ -66,8 +66,8 @@ features/API_Products.feature:14<ul class="collection stepList"><li class="colle
 </div><div id="g0f0s2" class="modal modal-fixed-footer">
 <div class="modal-content"><h5>Create a new Product (0.015s)</h5>
 features/API_Products.feature:15<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I POST a new product with &quot;usb cable&quot;, &quot;10&quot; (0.015s)<pre>{
-"id": 5,
+<b>When </b> I POST a new product with &quot;usb cable&quot;, &quot;10&quot; (0.014s)<pre>{
+"id": 8,
 "name": "usb cable",
 "price": 10
 }</pre><pre>201</pre></li>
@@ -78,12 +78,12 @@ features/API_Products.feature:15<ul class="collection stepList"><li class="colle
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s3" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Update a Product (0.042s)</h5>
+<div class="modal-content"><h5>Update a Product (0.040s)</h5>
 features/API_Products.feature:17<ul class="collection stepList"><li class="collection-item step passed">
 <b>Given </b> That I have just created a new product with name &quot;mouse&quot; and price of &quot;5&quot; (0.012s)</li>
 <li class="collection-item step passed">
-<b>When </b> I Update that product with a name of &quot;USB Headset&quot; and a price of &quot;50&quot; (0.019s)<pre>{
-"id": 6,
+<b>When </b> I Update that product with a name of &quot;USB Headset&quot; and a price of &quot;50&quot; (0.016s)<pre>{
+"id": 9,
 "name": "USB Headset",
 "price": 50
 }</pre><pre>200</pre></li>
@@ -96,19 +96,25 @@ features/API_Products.feature:17<ul class="collection stepList"><li class="colle
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s4" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Delete a Product (0.012s)</h5>
+<div class="modal-content"><h5>Delete a Product (0.039s)</h5>
 features/API_Products.feature:23<ul class="collection stepList"><li class="collection-item step passed">
 <b>When </b> I Delete product 3 (0.012s)</li>
-<li class="collection-item step passed">
-<b>Then </b> I get a 200 response code (0.000s)</li>
+<li class="collection-item step failed">
+<b>Then </b> I get a 200 response code (0.028s)<pre>
+expected: 200
+ got: 400(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/API_Products_Steps.rb:9:in `&quot;I get a {int} response code&quot;&#39;
+features/API_Products.feature:25:in `Then I get a 200 response code&#39;</pre>
+</li>
 </ul>
 </div><div class="modal-footer">
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f0s5" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Negative Test (0.011s)</h5>
+<div class="modal-content"><h5>Negative Test (0.012s)</h5>
 features/API_Products.feature:27<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I GET a product that does not exist (0.011s)</li>
+<b>When </b> I GET a product that does not exist (0.012s)</li>
 <li class="collection-item step passed">
 <b>Then </b> I get a 404 response code (0.000s)</li>
 </ul>
@@ -116,22 +122,47 @@ features/API_Products.feature:27<ul class="collection stepList"><li class="colle
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div><div id="g0f1s0" class="modal modal-fixed-footer">
-<div class="modal-content"><h5>Get a Product with GetProduct (0.058s)</h5>
+<div class="modal-content"><h5>GET a user (0.020s)</h5>
+features/API_Users.feature:5<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I get user 1 (0.020s)<pre>{
+"userID": 1,
+"userName": "Bob Jones"
+}</pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I get a 200 response code (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> The username is an &quot;Bob Jones&quot; (0.000s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s1" class="modal modal-fixed-footer">
+<div class="modal-content"><h5>Negative Auth Test (0.017s)</h5>
+features/API_Users.feature:10<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I GET a user without basic auth (0.017s)<pre>401</pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I get a 401 response code (0.000s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f2s0" class="modal modal-fixed-footer">
+<div class="modal-content"><h5>Get a Product with GetProduct (0.025s)</h5>
 features/API_Class.feature:5<ul class="collection stepList"><li class="collection-item step passed">
-<b>When </b> I get product 1 (0.056s)<pre>{
+<b>When </b> I get product 1 (0.023s)<pre>{
 "id": 1,
 "name": "iPad",
 "price": 500
 }</pre></li>
 <li class="collection-item step passed">
-<b>Then </b> I get a 200 Ok response (0.003s)</li>
+<b>Then </b> I get a 200 Ok response (0.002s)</li>
 </ul>
 </div><div class="modal-footer">
 <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
 </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f0s4').modal();$('#g0f0s5').modal();$('#g0f0s6').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();});
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f0s4').modal();$('#g0f0s5').modal();$('#g0f0s6').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();$('#g0f1s2').modal();$('#g0f2s0').modal();$('#g0f2s1').modal();});
 </script>
 <main class="orange lighten-5">
 <div class="row"><div id="overview" class="col s12 orange lighten-5">
@@ -149,7 +180,7 @@ $(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f
 </div><div class="col m4 s12">
 <table id="metaData" class="bordered">
 <tbody>
-<tr><th>Total Time</th><td>0.231s</td></tr><tr>
+<tr><th>Total Time</th><td>0.196s</td></tr><tr>
 <th>Project name</th>
 <td>API Test</td>
 </tr><tr>
@@ -157,24 +188,24 @@ $(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f
 <td>http://dummy.restapiexample.com</td>
 </tr><tr>
 <th>Report generated</th>
-<td>2020-02-06 11:34:25 UTC</td>
+<td>2020-02-10 09:36:46 UTC</td>
 </tr></tbody>
 </table>
 </div>
 </div></div><div id="features" class="col s12 orange lighten-5 white-text">
 <ul class="featureList collapsible popout" data-collapsible="expandable">
-<li class="feature working">
+<li class="feature broken">
 <div class="collapsible-header orange lighten-1 waves-effect waves-light">
 <i class="material-icons">featured_play_list</i>
-<b>Feature</b>&nbsp;API Product Tests&nbsp;(0.172s)
+<b>Feature</b>&nbsp;API Product Tests&nbsp;(0.134s)
 </div><div class="collapsible-body orange lighten-4">
 <ul class="collection scenarioList"><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
-<b>Scenario</b> Simple GET Product Test&nbsp;(0.018s)
+<b>Scenario</b> Simple GET Product Test&nbsp;(0.014s)
 </a>
 </li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
-<b>Scenario Outline</b> Create a new Product&nbsp;(0.074s)
+<b>Scenario Outline</b> Create a new Product&nbsp;(0.014s)
 </a>
 </li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s2">
@@ -182,26 +213,41 @@ $(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f
 </a>
 </li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s3">
-<b>Scenario</b> Update a Product&nbsp;(0.042s)
+<b>Scenario</b> Update a Product&nbsp;(0.040s)
 </a>
-</li><li class="collection-item scenario passed">
+</li><li class="collection-item scenario failed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s4">
-<b>Scenario</b> Delete a Product&nbsp;(0.012s)
+<b>Scenario</b> Delete a Product&nbsp;(0.039s)
 </a>
 </li><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s5">
-<b>Scenario</b> Negative Test&nbsp;(0.011s)
+<b>Scenario</b> Negative Test&nbsp;(0.012s)
 </a>
 </li></ul>
 </div>
 </li><li class="feature working">
 <div class="collapsible-header orange lighten-1 waves-effect waves-light">
 <i class="material-icons">featured_play_list</i>
-<b>Feature</b>&nbsp;Utilising Helper Class Example&nbsp;(0.058s)
+<b>Feature</b>&nbsp;Users&nbsp;(0.037s)
 </div><div class="collapsible-body orange lighten-4">
 <ul class="collection scenarioList"><li class="collection-item scenario passed">
 <a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
-<b>Scenario</b> Get a Product with GetProduct&nbsp;(0.058s)
+<b>Scenario</b> GET a user&nbsp;(0.020s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s1">
+<b>Scenario</b> Negative Auth Test&nbsp;(0.017s)
+</a>
+</li></ul>
+</div>
+</li><li class="feature working">
+<div class="collapsible-header orange lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Utilising Helper Class Example&nbsp;(0.025s)
+</div><div class="collapsible-body orange lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f2s0">
+<b>Scenario</b> Get a Product with GetProduct&nbsp;(0.025s)
 </a>
 </li></ul>
 </div>
@@ -249,13 +295,13 @@ API Product Tests
 </td><td class="hide"></td><td class="uppercase">
 passed
 </td><td class="hide-on-small-only"></td></tr>
-<tr class="passed">
+<tr class="failed">
 <td class="hide-on-small-only">
 API Product Tests
 </td><td class="hoverable">
 <a class="modal-trigger white-text" href="#g0f0s4">Delete a Product</a>
 </td><td class="hide"></td><td class="uppercase">
-passed
+failed
 </td><td class="hide-on-small-only"></td></tr>
 <tr class="passed">
 <td class="hide-on-small-only">
@@ -267,15 +313,42 @@ passed
 </td><td class="hide-on-small-only"></td></tr>
 <tr class="passed">
 <td class="hide-on-small-only">
+Users
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s0">GET a user</a>
+</td><td class="hide"></td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Users
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s1">Negative Auth Test</a>
+</td><td class="hide"></td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
 Utilising Helper Class Example
 </td><td class="hoverable">
-<a class="modal-trigger white-text" href="#g0f1s0">Get a Product with GetProduct</a>
+<a class="modal-trigger white-text" href="#g0f2s0">Get a Product with GetProduct</a>
 </td><td class="hide"></td><td class="uppercase">
 passed
 </td><td class="hide-on-small-only"></td></tr>
 </tbody>
 </table></div><div id="errors" class="col s12 orange lighten-5">
-<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+<ul class="errorList collapsible popout" data-collapsible="expandable"><li class="error">
+<div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+<i class="material-icons">bug_report</i>
+</div><div class="collapsible-body orange lighten-4">
+<ul class="collection failedScenarioList">
+<li class="collection-item failedScenario orange lighten-5 red-text">
+<i class="material-icons">highlight_off</i>&nbsp;<a class="modal-trigger red-text" href="#g0f0s4">Delete a Product</a>
+</li>
+</ul>
+</div>
+</li>
+</ul></div>
 </div>
 </main><footer class="page-footer orange lighten-4">
 <div class="footer-copyright orange lighten-1">
